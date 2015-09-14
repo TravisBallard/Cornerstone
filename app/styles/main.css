@@ -6,11 +6,20 @@
 .align-center {
   text-align: center; }
 
+.headline {
+  font-size: 3em;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  color: #38a8df;
+  font-family: "Montserrat", arial, sans-serif;
+  word-wrap: break-word; }
+
 body {
   font-size: 62.5%;
   font-family: "Open Sans", arial, sans-serif;
   background: #fff url(../images/bg.png) 0 0 repeat;
-  padding-bottom: 40px; }
+  padding-bottom: 40px;
+  background-attachment: fixed; }
 
 #container {
   max-width: 1200px;
@@ -56,13 +65,6 @@ header {
 .content {
   padding: 60px;
   overflow: hidden; }
-
-.headline {
-  font-size: 3em;
-  margin-bottom: 20px;
-  text-transform: uppercase;
-  color: #38a8df;
-  font-family: "Montserrat", arial, sans-serif; }
 
 .topics {
   display: flex;
@@ -119,13 +121,127 @@ header {
           transform: translateY(-50%) translateX(-50%); }
 
 .worker-wrap {
-  margin-top: 40px; }
+  border-top: 1px solid #d5d5d5;
+  border-bottom: 1px solid #d5d5d5;
+  padding: 60px 0;
+  margin: 40px 0 60px; }
   .worker-wrap > h2 {
     width: 70%;
-    margin: 0 auto; }
+    margin: 0 auto 40px; }
+
+ul.aid-workers {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none outside; }
+  ul.aid-workers li {
+    width: 33.333333%;
+    box-sizing: border-box;
+    padding: 10px;
+    overflow: hidden; }
+    ul.aid-workers li .worker-image {
+      position: relative;
+      background-color: #dfdfdf;
+      overflow: hidden; }
+      ul.aid-workers li .worker-image img {
+        width: auto;
+        max-width: 100%;
+        margin: 0 auto;
+        display: block;
+        position: relative;
+        z-index: 2;
+        transition: all .2s ease-in-out; }
+      ul.aid-workers li .worker-image:hover img {
+        transform: scale(1.2); }
+      ul.aid-workers li .worker-image h4 {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.6);
+        text-align: center;
+        color: #fff;
+        font-family: "Montserrat", arial, sans-serif;
+        font-size: 1.6em;
+        font-weight: 300;
+        padding: 5px;
+        box-sizing: border-box;
+        text-transform: uppercase;
+        display: none;
+        z-index: 5; }
+    ul.aid-workers li .worker-content {
+      margin-top: 20px;
+      font-size: 1.6em;
+      font-weight: 400;
+      font-family: "Open Sans", arial, sans-serif;
+      color: #0f5894;
+      text-align: center; }
+      ul.aid-workers li .worker-content:before, ul.aid-workers li .worker-content:after {
+        content: '"'; }
+    ul.aid-workers li .meta {
+      margin-top: 20px;
+      text-align: center;
+      font-size: 1.4em;
+      color: #768897; }
+
+.button-wrap {
+  margin-bottom: 40px; }
+  .button-wrap h2.headline {
+    font-size: 3em;
+    font-weight: 300; }
+  .button-wrap .start-learning-button {
+    display: block;
+    margin: 0 auto;
+    width: auto;
+    background-color: #28b1e3;
+    color: #fff;
+    border: none;
+    border-radius: .3em;
+    padding: 10px 30px;
+    font-family: "Montserrat", arial, sans-serif;
+    font-size: 2em;
+    box-shadow: #4e8fc3 0 5px 0;
+    cursor: pointer;
+    max-width: 100%;
+    word-wrap: break-word; }
+    .button-wrap .start-learning-button:hover {
+      background-color: #42c2f1; }
 
 footer {
   height: 40px;
   background-color: #213240; }
+
+@media screen and (max-width: 1100px) {
+  .topics {
+    display: block; }
+    .topics .topic {
+      width: 100%; }
+      .topics .topic .r {
+        padding-right: 0 !important; }
+        .topics .topic .r .icon {
+          float: right;
+          clear: both; }
+
+  .aid-workers {
+    display: block; }
+    .aid-workers .worker {
+      width: 100%;
+      margin-bottom: 40px; }
+      .aid-workers .worker:last-child {
+        margin-bottom: 0; } }
+@media screen and (max-width: 800px) {
+  .topics .topic {
+    flex-direction: row-reverse !important; }
+    .topics .topic .l {
+      text-align: center !important;
+      width: 100% !important; }
+    .topics .topic .r {
+      width: 100% !important; }
+    .topics .topic .icon {
+      float: none !important;
+      margin: 10px auto 0 auto; }
+
+  .start-learning-button {
+    font-size: 1.4em !important; } }
 
 /*# sourceMappingURL=main.css.map */

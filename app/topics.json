@@ -1,0 +1,38 @@
+[
+	{
+		"title":"Humanitarianism",
+		"content": "The Sphere Handbook in Action Line Course in English, French, Spanish & Arabic; Sexual & Gender based violence; Humanitarian Coordination",
+		"icon": "globe.png",
+		"entrance_effect": "slideInLeft"
+	},
+	{
+		"title":"Program/Operations",
+		"content": "Education in Emergencies: A Tool kit for Starting & Managing Education in Emergencies; Technical Project Management (TPM) in WASH Emergencies.",
+		"icon": "clipboard.png",
+		"entrance_effect": "slideInRight"
+	},
+	{
+		"title":"Management & Leadership",
+		"content": "Becoming a Manager Coach; fostering & Maintaining Motivation; Code of Good Practice in the Management & Support of Aid Personnel.",
+		"icon": "people.png",
+		"entrance_effect": "slideInLeft"
+	},
+	{
+		"title":"Staff Safety & Security",
+		"content": "Travel Safety & Person Security; Family Matters; Self-Care for Family Members of Humanitarian Workers; Basic Security in the Field.",
+		"icon": "aid.png",
+		"entrance_effect": "slideInRight"
+	},
+	{
+		"title":"Support Functions",
+		"content": "Supporting National Staff; Facilitating a Training Course; Managing Stress in Humanitarian Workers &mdash; Guidelines for Good Practice",
+		"icon": "person.png",
+		"entrance_effect": "slideInLeft"
+	},
+	{
+		"title":"Soft-Skill Course Library",
+		"content": "The 12 Guidelines of Effective Time Management; Language Learning Modules for Spanish, French, and English; Writing for the Web.",
+		"icon": "computer.png",
+		"entrance_effect": "slideInRight"
+	}
+]

@@ -1,36 +1,18 @@
 <div class="topic-wrap">
   <h2 class="headline">Course Topics</h2>
   <div class="topics">
-    <div class="topic" ng-repeat="topic in topics">
-      <div class="l">
-        <h3>{{ topic.title }}</h3>
-        <div class="topic-content">
-          {{ topic.content }}
-        </div>
-      </div>
-      <div class="r">
-        <div class="icon animated fadeInDownBig">
-          <img ng-src="../images/{{ topic.icon }}" alt="" />
-        </div>
-      </div>
-    </div>
+    <div ng-repeat="topic in topics" topic></div>
   </div>
 </div>
 
 <div class="worker-wrap">
   <h2 class="headline align-center">Here's what humanitarian aid workers are saying about us</h2>
   <ul class="aid-workers">
-    <li ng-repeat="worker in workers">
-
-      <div class="worker-image">
-        <img ng-src="../images/{{ worker.thumbnail }}" alt="" />
-        <h4>{{ worker.name }}</h4>
-      </div>
-      <div class="worker-content">
-        {{ worker.content }}
-      </div>
-      <p class="meta">{{ worker.name }}, {{ worker.company }}</p>
-
-    </li>
+    <li ng-repeat="worker in workers" worker></li>
   </ul>
+</div>
+
+<div class="button-wrap">
+  <h2 class="headline align-center">Become Disaster Ready Today!</h2>
+  <input type="button" class="button blue start-learning-button" value="Start Learning Now" />
 </div>
