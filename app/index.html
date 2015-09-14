@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Cornerstone</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="bower_components/animate.css/animate.css" />
+    <link rel="stylesheet" href="styles/main.css">
+  </head>
+
+  <body ng-app="cornerstoneApp">
+
+    <!--[if lte IE 8]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <div id="container">
+
+      <header>
+        <div class="overlay"></div>
+        <h1><a class="animated fadeInDownBig" href="/#/">Cornerstone Challenge</a></h1>
+      </header>
+
+      <div class="container">
+        <div class="content" ng-view="">
+
+        </div>
+      </div>
+
+      <footer>
+
+      </footer>
+
+    </div>
+
+
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/animateCSS/dist/jquery.animatecss.js"></script>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/controllers/main.js"></script>
+    <script src="scripts/controllers/about.js"></script>
+
+</body>
+</html>
