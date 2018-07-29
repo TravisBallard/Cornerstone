@@ -11,5 +11,6 @@
     "angular-mocks": "^1.3.0"
   },
   "appPath": "app",
-  "moduleName": "cornerstoneApp"
+  "moduleName": "cornerstoneApp",
+  "registry": "https://registry.bower.io"
 }
